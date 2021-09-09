@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 16", "Övning 16\Ö
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 17", "Övning 17\Övning 17.csproj", "{ECF0ADC9-3F6F-4764-94B9-C87339272222}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 18", "Övning 18\Övning 18.csproj", "{F3BEE89E-B26A-4DC3-8926-F010D9D01779}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,5 +110,9 @@ Global
 		{ECF0ADC9-3F6F-4764-94B9-C87339272222}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECF0ADC9-3F6F-4764-94B9-C87339272222}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECF0ADC9-3F6F-4764-94B9-C87339272222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3BEE89E-B26A-4DC3-8926-F010D9D01779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3BEE89E-B26A-4DC3-8926-F010D9D01779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3BEE89E-B26A-4DC3-8926-F010D9D01779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3BEE89E-B26A-4DC3-8926-F010D9D01779}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
