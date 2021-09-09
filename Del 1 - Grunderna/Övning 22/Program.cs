@@ -19,8 +19,6 @@ namespace Övning_22
             double finalBalance = balance * Math.Pow(interest, years);
             
             Console.WriteLine($"\nDet kommer att ta {years} år innan saldot når {finalBalance :f2}");
-
-
         }
     }
 }
