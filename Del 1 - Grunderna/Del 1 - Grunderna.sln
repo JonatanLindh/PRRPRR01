@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 20", "Övning 20\Ö
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 21", "Övning 21\Övning 21.csproj", "{7EA483AB-1E82-4F71-9C02-D6702B9FEC25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 22", "Övning 22\Övning 22.csproj", "{3C67DC7C-ECE7-4E7B-938C-1E32A8F85D64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -132,5 +134,9 @@ Global
 		{7EA483AB-1E82-4F71-9C02-D6702B9FEC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EA483AB-1E82-4F71-9C02-D6702B9FEC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EA483AB-1E82-4F71-9C02-D6702B9FEC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C67DC7C-ECE7-4E7B-938C-1E32A8F85D64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C67DC7C-ECE7-4E7B-938C-1E32A8F85D64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C67DC7C-ECE7-4E7B-938C-1E32A8F85D64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C67DC7C-ECE7-4E7B-938C-1E32A8F85D64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
