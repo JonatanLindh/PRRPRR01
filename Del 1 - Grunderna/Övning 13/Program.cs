@@ -23,7 +23,6 @@ namespace Övning_13
 
         // Denna metoden har jag skapat själv och är till för att hantera fel vid inmatning och konvertering
         // https://github.com/JonatanLindh/PRRPRR01/blob/master/CustomFunctions.cs
-
         private static T Input<T>(string prompt, Func<string, T> parser)
         {
             while (true)
