@@ -18,10 +18,14 @@ class CustomFunctions
                 var parsed = parser(input);
                 return parsed;
             }
-            catch
+            catch (Exception e)
             {
-                Console.WriteLine($"Kunde inte konvertera \"{input}\" till {typeof(T).Name}.\n");
-                continue;
+                string errMsg = e switch
+                {
+                    OverflowException => $"Kunde inte konvertera \"{input}\" till {typeof(T).Name} (overflow).",
+                    _ => $"Kunde inte konvertera \"{input}\" till {typeof(T).Name}."
+                };
+                Console.WriteLine($"{errMsg}\n");
             }
         }
     }
