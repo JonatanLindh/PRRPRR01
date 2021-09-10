@@ -1,4 +1,5 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -42,14 +43,9 @@ namespace Övning_25
 
         static void C()
         {
-            Console.Write("Tabeller från: ");
-            int from = int.Parse(Console.ReadLine());
-
-            Console.Write("Till: ");
-            int untill = int.Parse(Console.ReadLine());
-
-            Console.Write("Steg i varje tabell: ");
-            int steps = int.Parse(Console.ReadLine());
+            int from = Input("Tabeller från: ", int.Parse);
+            int untill = Input("Till: ", int.Parse);
+            int steps = Input("Steg i varje tabell: ", int.Parse);
 
             Console.WriteLine();
 
@@ -68,14 +64,9 @@ namespace Övning_25
         {
             int sum = 0;
 
-            Console.Write("Tabeller från: ");
-            int from = int.Parse(Console.ReadLine());
-
-            Console.Write("Till: ");
-            int untill = int.Parse(Console.ReadLine());
-
-            Console.Write("Steg i varje tabell: ");
-            int steps = int.Parse(Console.ReadLine());
+            int from = Input("Tabeller från: ", int.Parse);
+            int untill = Input("Till: ", int.Parse);
+            int steps = Input("Steg i varje tabell: ", int.Parse);
 
             Console.WriteLine();
 
@@ -91,6 +82,30 @@ namespace Övning_25
             }
 
             Console.WriteLine($"Summan av produkterna är: {sum}");
+        }
+
+        private static T Input<T>(string prompt, Func<string, T> parser)
+        {
+            while (true)
+            {
+                Console.Write(prompt);
+                string? input = Console.ReadLine();
+                try
+                {
+                    if (string.IsNullOrEmpty(input))
+                    {
+                        throw new Exception();
+                    }
+
+                    var parsed = parser(input);
+                    return parsed;
+                }
+                catch
+                {
+                    Console.WriteLine($"Kunde inte konvertera \"{input}\" till {typeof(T).Name}.\n");
+                    continue;
+                }
+            }
         }
     }
 }
