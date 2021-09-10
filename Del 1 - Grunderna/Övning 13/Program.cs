@@ -33,7 +33,7 @@ namespace Övning_13
                 {
                     if (string.IsNullOrEmpty(input))
                     {
-                        throw new Exception();
+                        throw new ArgumentNullException();
                     }
 
                     var parsed = parser(input);
@@ -41,11 +41,7 @@ namespace Övning_13
                 }
                 catch (Exception e)
                 {
-                    string errMsg = e switch
-                    {
-                        OverflowException => $"Kunde inte konvertera \"{input}\" till {typeof(T).Name} (overflow).",
-                        _ => $"Kunde inte konvertera \"{input}\" till {typeof(T).Name}."
-                    };
+                    string errMsg = $"Kunde inte konvertera \"{input}\" till {typeof(T).Name} \nFel: {e.Message}";
                     Console.WriteLine($"{errMsg}\n");
                 }
             }
