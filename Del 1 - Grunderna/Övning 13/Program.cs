@@ -17,7 +17,16 @@ namespace Övning_13
         static void Main(string[] args)
         {
             int numerator = Input("Täljare: ", int.Parse);
-            int denominator = Input("Nämnare: ", int.Parse);
+            int denominator = Input("Nämnare: ", s =>
+            {
+                int d = int.Parse(s);
+                if (d == 0)
+                {
+                    throw new DivideByZeroException();
+                }
+                return (d);
+                
+            });
 
             int whole = numerator / denominator;
             int newNumerator = numerator % denominator;
