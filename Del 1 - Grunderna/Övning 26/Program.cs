@@ -1,9 +1,17 @@
 ﻿#nullable enable
 using System;
+using Subclasses;
+
+/*
+ * Subclasses innehåller classes som jag inheritar från
+ * Detta är för att inte behöva upprepa kod
+ * https://github.com/JonatanLindh/PRRPRR01/blob/master/Del%201%20-%20Grunderna/Subclasses/Class1.cs
+ * Härifrån kommer t.ex Input metoden
+ */
 
 namespace Övning_26
 {
-    class Program
+    class Program : MainSubclass
     {
         static void Main(string[] args)
         {
@@ -11,30 +19,6 @@ namespace Övning_26
             int num2 = Input("Tal 2: ", int.Parse);
             
             Console.WriteLine($"\nStörst: {((num1 > num2) ? num1 : num2)}");
-        }
-
-        private static T Input<T>(string prompt, Func<string, T> parser)
-        {
-            while (true)
-            {
-                Console.Write(prompt);
-                string? input = Console.ReadLine();
-                try
-                {
-                    if (string.IsNullOrEmpty(input))
-                    {
-                        throw new ArgumentNullException();
-                    }
-
-                    var parsed = parser(input);
-                    return parsed;
-                }
-                catch (Exception e)
-                {
-                    string errMsg = $"Kunde inte konvertera \"{input}\" till {typeof(T).Name} \nFel: {e.Message}";
-                    Console.WriteLine($"{errMsg}\n");
-                }
-            }
         }
     }
 }

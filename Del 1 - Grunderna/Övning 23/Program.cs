@@ -1,19 +1,24 @@
-﻿using System;
+﻿#nullable enable
+using System;
+using Subclasses;
+
+/*
+ * Subclasses innehåller classes som jag inheritar från
+ * Detta är för att inte behöva upprepa kod
+ * https://github.com/JonatanLindh/PRRPRR01/blob/master/Del%201%20-%20Grunderna/Subclasses/Class1.cs
+ * Härifrån kommer t.ex Input metoden
+ */
 
 namespace Övning_23
 {
-    class Program
+    class Program : MainSubclass
     {
         static void Main(string[] args)
         {
-            Console.Write("Start: ");
-            int start = int.Parse(Console.ReadLine());
             
-            Console.Write("Stop: ");
-            int stop = int.Parse(Console.ReadLine());
-            
-            Console.Write("Steg: ");
-            int step = int.Parse(Console.ReadLine());
+            int start = Input("Start: ", int.Parse);
+            int stop = Input("Stop: ", int.Parse);
+            int step = Input("Steg: ", int.Parse);
             
             Console.WriteLine();
             

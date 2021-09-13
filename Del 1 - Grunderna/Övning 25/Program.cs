@@ -1,11 +1,17 @@
 ﻿#nullable enable
 using System;
-using System.Collections.Generic;
-using System.Linq;
+using Subclasses;
+
+/*
+ * Subclasses innehåller classes som jag inheritar från
+ * Detta är för att inte behöva upprepa kod
+ * https://github.com/JonatanLindh/PRRPRR01/blob/master/Del%201%20-%20Grunderna/Subclasses/Class1.cs
+ * Härifrån kommer t.ex Input metoden
+ */
 
 namespace Övning_25
 {
-    class Program
+    class Program : MainSubclass
     {
         static void Main(string[] args)
         {
@@ -82,30 +88,6 @@ namespace Övning_25
             }
 
             Console.WriteLine($"Summan av produkterna är: {sum}");
-        }
-
-        private static T Input<T>(string prompt, Func<string, T> parser)
-        {
-            while (true)
-            {
-                Console.Write(prompt);
-                string? input = Console.ReadLine();
-                try
-                {
-                    if (string.IsNullOrEmpty(input))
-                    {
-                        throw new Exception();
-                    }
-
-                    var parsed = parser(input);
-                    return parsed;
-                }
-                catch
-                {
-                    Console.WriteLine($"Kunde inte konvertera \"{input}\" till {typeof(T).Name}.\n");
-                    continue;
-                }
-            }
         }
     }
 }

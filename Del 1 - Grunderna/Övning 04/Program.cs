@@ -1,16 +1,24 @@
-﻿using System;
+﻿#nullable enable
+using System;
+using Subclasses;
+
+/*
+ * Subclasses innehåller classes som jag inheritar från
+ * Detta är för att inte behöva upprepa kod
+ * https://github.com/JonatanLindh/PRRPRR01/blob/master/Del%201%20-%20Grunderna/Subclasses/Class1.cs
+ * Härifrån kommer t.ex Input metoden
+ */
 
 namespace Övning_4
 {
-    class Program
+    class Program : MainSubclass
     {
         static void Main(string[] args)
         {
-            Console.Write("Sidlängd: ");
-            int sideLen = int.Parse(Console.ReadLine());
+            double sideLen = Input("Sidlängd: ", double.Parse);
 
-            Console.WriteLine($"\nTotal area: {Math.Pow(sideLen, 2) * 6} a.e.");
-            Console.WriteLine($"Volym: {Math.Pow(sideLen, 3)} v.e.");
+            Console.WriteLine($"\nTotal area: {Math.Pow(sideLen, 2) * 6 :f2} a.e.");
+            Console.WriteLine($"Volym: {Math.Pow(sideLen, 3) :f2} v.e.");
         }
     }
 }

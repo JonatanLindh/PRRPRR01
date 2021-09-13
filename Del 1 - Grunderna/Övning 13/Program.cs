@@ -1,6 +1,5 @@
 ﻿#nullable enable
 using System;
-using System.Diagnostics;
 using Subclasses;
 
 /*
@@ -12,7 +11,7 @@ using Subclasses;
 
 namespace Övning_13
 {
-    class Program : Subclasses.MainSubclass
+    class Program : MainSubclass
     {
         static void Main(string[] args)
         {
@@ -25,7 +24,6 @@ namespace Övning_13
                     throw new DivideByZeroException();
                 }
                 return (d);
-                
             });
 
             int whole = numerator / denominator;

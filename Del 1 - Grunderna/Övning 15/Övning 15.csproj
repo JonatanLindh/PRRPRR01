@@ -6,4 +6,8 @@
         <RootNamespace>Övning_15</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Subclasses\Subclasses.csproj" />
+    </ItemGroup>
+
 </Project>
