@@ -1,10 +1,12 @@
 ﻿#nullable enable
 using System;
 using System.Diagnostics;
+using Subclasses;
+
 
 namespace Övning_13
 {
-    class Program
+    class Program : Subclasses.MainSubclass
     {
         static void Main(string[] args)
         {
@@ -13,38 +15,11 @@ namespace Övning_13
 
             int whole = numerator / denominator;
             int newNumerator = numerator % denominator;
-            
+
             string ansFrac = (newNumerator == 0) ? "" : $" {newNumerator}/{denominator}";
             string ansWhole = whole == 0 ? "" : $" {whole}";
 
-
             Console.WriteLine($"\n{numerator}/{denominator} blir{ansWhole}{ansFrac} i blandad form");
-        }
-
-        // Denna metoden har jag skapat själv och är till för att hantera fel vid inmatning och konvertering
-        // https://github.com/JonatanLindh/PRRPRR01/blob/master/CustomFunctions.cs
-        private static T Input<T>(string prompt, Func<string, T> parser)
-        {
-            while (true)
-            {
-                Console.Write(prompt);
-                string? input = Console.ReadLine();
-                try
-                {
-                    if (string.IsNullOrEmpty(input))
-                    {
-                        throw new ArgumentNullException();
-                    }
-
-                    var parsed = parser(input);
-                    return parsed;
-                }
-                catch (Exception e)
-                {
-                    string errMsg = $"Kunde inte konvertera \"{input}\" till {typeof(T).Name} \nFel: {e.Message}";
-                    Console.WriteLine($"{errMsg}\n");
-                }
-            }
         }
     }
 }
