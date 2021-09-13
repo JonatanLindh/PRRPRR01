@@ -12,8 +12,8 @@ namespace Övning_13
             int denominator = Input("Nämnare: ", int.Parse);
 
             int whole = numerator / denominator;
-
             int newNumerator = numerator % denominator;
+            
             string ansFrac = (newNumerator == 0) ? "" : $" {newNumerator}/{denominator}";
             string ansWhole = whole == 0 ? "" : $" {whole}";
 
