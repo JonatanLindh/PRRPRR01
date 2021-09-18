@@ -1,5 +1,7 @@
 ﻿#nullable enable
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Subclasses
 {
@@ -23,10 +25,31 @@ namespace Subclasses
                 }
                 catch (Exception e)
                 {
-                    string errMsg = $"Kunde inte konvertera \"{input}\" till {typeof(T).Name} \nFel: {e.Message}";
+                    string errMsg = $"Ogiltig input: \"{input}\"\nFel: {e.Message}";
                     Console.WriteLine($"{errMsg}\n");
                 }
             }
+        }
+
+        public static Func<string, T> CreateParser<T>(Func<string, T> baseParser,
+            T[]? notAllowed=null, T[]? onlyAllowed=null, string? errMsg=null) where T : notnull
+        {
+            return s =>
+            {
+                T parsed = baseParser(s);
+                if (onlyAllowed != null && !onlyAllowed.Contains(parsed))
+                {
+                    throw new Exception((errMsg != null) ? errMsg : $"Input måste vara någon av dessa: {onlyAllowed}");
+                }
+                
+                if (notAllowed != null && notAllowed.Contains(parsed))
+                {
+                    throw new Exception((errMsg != null) ? errMsg : $"Input får inte vara någon av dessa: {onlyAllowed}");
+                    
+                }
+
+                return parsed;
+            };
         }
     }
 }
