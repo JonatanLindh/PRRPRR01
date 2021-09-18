@@ -31,7 +31,7 @@ namespace Övning_37
             double num2 = Input("Andra talet: ", num2Parser);
 
             // Kan endast vara +-*/ pga operatorParser so default behövs inte, stänger därför av varningen
-# pragma warning disable 8509
+            # pragma warning disable 8509
             double ans = op switch
             {
                 '+' => num1 + num2,
@@ -39,7 +39,7 @@ namespace Övning_37
                 '*' => num1 * num2,
                 '/' => num1 / num2,
             };
-# pragma warning restore
+            # pragma warning restore
 
             Console.WriteLine($"\n{num1} {op} {num2} = {ans}");
         }
