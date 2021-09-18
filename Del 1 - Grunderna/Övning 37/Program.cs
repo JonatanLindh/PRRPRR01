@@ -1,6 +1,5 @@
 ﻿#nullable enable
 using System;
-using System.Collections.Generic;
 using Subclasses;
 
 /*
@@ -17,21 +16,20 @@ namespace Övning_37
     {
         static void Main(string[] args)
         {
-            double num1 = Input("Första talet: ", double.Parse);
-
             // Validerar att räknesätt ör +-*/
-            Func<string, char> operatorParser = CreateParser(char.Parse, onlyAllowed: new char[] {'+', '-', '*', '/'},
-                errMsg: "Okänt räknesätt.");
-            char op = Input("Räknesätt (+-*/): ", operatorParser);
+            char[] ops = {'+', '-', '*', '/'};
+            Func<string, char> operatorParser = CreateParser(char.Parse, onlyAllowed: ops, errMsg: "Okänt räknesätt.");
 
-            // Ser till att num2 inte är 0 om räknesätt är division
-            Func<string, double> num2Parser = (op == '/')
-                ? CreateParser(double.Parse, new double[] {0}, errMsg: "Tal 2 kan inte vara 0 p.g.a. division")
-                : double.Parse;
-            double num2 = Input("Andra talet: ", num2Parser);
+            // Tillåter inte 0
+            string div0ErrMsg = "Tal 2 kan inte vara 0 p.g.a. division";
+            Func<string, double> not0Parser = CreateParser(double.Parse, new double[] {0}, errMsg: div0ErrMsg);
+
+            double num1 = Input("Första talet: ", double.Parse);
+            char op = Input("Räknesätt (+-*/): ", operatorParser);
+            double num2 = Input("Andra talet: ", (op == '/') ? not0Parser : double.Parse);
 
             // Kan endast vara +-*/ pga operatorParser so default behövs inte, stänger därför av varningen
-            # pragma warning disable 8509
+# pragma warning disable 8509
             double ans = op switch
             {
                 '+' => num1 + num2,
@@ -39,7 +37,7 @@ namespace Övning_37
                 '*' => num1 * num2,
                 '/' => num1 / num2,
             };
-            # pragma warning restore
+# pragma warning restore
 
             Console.WriteLine($"\n{num1} {op} {num2} = {ans}");
         }

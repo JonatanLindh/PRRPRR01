@@ -30,7 +30,7 @@ namespace Subclasses
                 }
             }
         }
-
+        
         public static Func<string, T> CreateParser<T>(Func<string, T> baseParser,
             T[]? notAllowed=null, T[]? onlyAllowed=null, string? errMsg=null) where T : notnull
         {
