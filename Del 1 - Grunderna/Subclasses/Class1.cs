@@ -30,6 +30,19 @@ namespace Subclasses
                 }
             }
         }
+
+        // class FunctionChainNode<T, U, V>
+        // {
+        //     private Func<T, U> value;
+        //     // private FunctionChainNode<U, V>? next = null;
+        // }
+        // public class InputParser<T>
+        // {
+        //     private InputParser(Func<string, T>? baseParser=null)
+        //     {
+        //         
+        //     }
+        // }
         
         public static Func<string, T> CreateParser<T>(Func<string, T> baseParser,
             T[]? notAllowed=null, T[]? onlyAllowed=null, string? errMsg=null) where T : notnull

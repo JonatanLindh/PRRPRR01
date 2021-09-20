@@ -23,9 +23,10 @@ namespace Övning_13
                 {
                     throw new DivideByZeroException();
                 }
+
                 return (d);
             });
-
+            
             int whole = numerator / denominator;
             int newNumerator = numerator % denominator;
 
