@@ -70,7 +70,7 @@ namespace Extraövning_Iterationer
         {
             int n = 0;
             int m = 1;
-            
+
             for (int i = 0; i < 12; i++)
             {
                 string line = new String('*', m);
@@ -89,25 +89,26 @@ namespace Extraövning_Iterationer
             for (int i = 0; i < 7; i++)
             {
                 string line = new String('*', m);
-                
+
                 for (int j = 0; j < m; j++)
                 {
                     Console.WriteLine(line);
                 }
-                
+
                 int temp = m;
                 m += n;
                 n = temp;
-                
+
                 Console.WriteLine();
             }
         }
+
         static void F()
         {
             List<int> incr = Enumerable.Range(0, 15).ToList();
             List<int> decr = Enumerable.Range(0, 14).Reverse().ToList();
             incr.AddRange(decr);
-            
+
             foreach (var i in incr)
             {
                 string minus = new String('-', 14 - i);
