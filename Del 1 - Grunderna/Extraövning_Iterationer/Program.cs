@@ -9,11 +9,11 @@ namespace Extraövning_Iterationer
     {
         static void Main(string[] args)
         {
-            // A();
-            // B();
-            // C();
-            // D();
-            // E();
+            A();
+            B();
+            C();
+            D();
+            E();
             F();
         }
 
@@ -28,6 +28,8 @@ namespace Extraövning_Iterationer
 
                 Console.WriteLine();
             }
+
+            Console.Write("\n\n\n");
         }
 
         static void B()
@@ -41,6 +43,8 @@ namespace Extraövning_Iterationer
 
                 Console.WriteLine();
             }
+
+            Console.Write("\n\n\n");
         }
 
         static void C()
@@ -64,6 +68,8 @@ namespace Extraövning_Iterationer
 
                 Console.WriteLine();
             }
+
+            Console.Write("\n\n\n");
         }
 
         static void D()
@@ -79,6 +85,8 @@ namespace Extraövning_Iterationer
                 n = temp;
                 Console.WriteLine(line);
             }
+
+            Console.Write("\n\n\n");
         }
 
         static void E()
@@ -88,7 +96,7 @@ namespace Extraövning_Iterationer
 
             for (int i = 0; i < 7; i++)
             {
-                string line = new String('*', m);
+                string line = string.Concat(Enumerable.Repeat("x ", m));
 
                 for (int j = 0; j < m; j++)
                 {
@@ -101,6 +109,8 @@ namespace Extraövning_Iterationer
 
                 Console.WriteLine();
             }
+
+            Console.Write("\n\n\n");
         }
 
         static void F()
@@ -115,6 +125,8 @@ namespace Extraövning_Iterationer
                 string plus = new String('+', i);
                 Console.WriteLine($"{minus}{plus}+{plus}{minus}");
             }
+
+            Console.Write("\n\n\n");
         }
     }
 }
