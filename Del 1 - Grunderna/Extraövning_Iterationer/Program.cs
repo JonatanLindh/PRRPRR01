@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace Extraövning_Iterationer
 {
@@ -99,10 +102,18 @@ namespace Extraövning_Iterationer
                 Console.WriteLine();
             }
         }
-
         static void F()
         {
+            List<int> incr = Enumerable.Range(0, 15).ToList();
+            List<int> decr = Enumerable.Range(0, 14).Reverse().ToList();
+            incr.AddRange(decr);
             
+            foreach (var i in incr)
+            {
+                string minus = new String('-', 14 - i);
+                string plus = new String('+', i);
+                Console.WriteLine($"{minus}{plus}+{plus}{minus}");
+            }
         }
     }
 }
