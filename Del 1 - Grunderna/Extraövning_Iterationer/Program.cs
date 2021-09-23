@@ -9,7 +9,9 @@ namespace Extraövning_Iterationer
             // A();
             // B();
             // C();
-            D();
+            // D();
+            // E();
+            F();
         }
 
         static void A()
@@ -63,10 +65,44 @@ namespace Extraövning_Iterationer
 
         static void D()
         {
+            int n = 0;
+            int m = 1;
+            
             for (int i = 0; i < 12; i++)
             {
-                //fib
+                string line = new String('*', m);
+                int temp = m;
+                m += n;
+                n = temp;
+                Console.WriteLine(line);
             }
+        }
+
+        static void E()
+        {
+            int n = 0;
+            int m = 1;
+
+            for (int i = 0; i < 7; i++)
+            {
+                string line = new String('*', m);
+                
+                for (int j = 0; j < m; j++)
+                {
+                    Console.WriteLine(line);
+                }
+                
+                int temp = m;
+                m += n;
+                n = temp;
+                
+                Console.WriteLine();
+            }
+        }
+
+        static void F()
+        {
+            
         }
     }
 }
