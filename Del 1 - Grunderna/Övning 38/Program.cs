@@ -9,31 +9,26 @@ using Superclasses;
  * Härifrån kommer t.ex Input metoden
  */
 
-namespace Övning_36
+
+namespace Övning_38
 {
-    class Program : MainSuperclass
+    class Program
     {
         static void Main(string[] args)
         {
-            int num = Input("Tal: ", int.Parse);
-            Console.WriteLine(num switch
+            int tal1;
+
+            Console.WriteLine("Ange ett tal");
+            tal1 = int.Parse(Console.ReadLine());
+
+            if(tal1 < 10)
             {
-                < 0 => "\nTalet är negativt",
-                0 => "\nTalet är 0",
-                > 0 => "\nTalet är positivt",
-            });
+                Console.WriteLine("Ditt tal är mindre än 10");
+            } 
+            else if(tal1 > 10)
+            {
+                Console.WriteLine("Ditt tal är större än 10");
+            }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -60,7 +60,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 29", "Övning 29\Ö
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 30", "Övning 30\Övning 30.csproj", "{79226D94-69B2-484D-8E1B-6A24CAA4EC7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subclasses", "Subclasses\Subclasses.csproj", "{12566484-7827-4EE1-B99C-9F2982A78A06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superclasses", "Superclasses\Superclasses.csproj", "{12566484-7827-4EE1-B99C-9F2982A78A06}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 31", "Övning 31\Övning 31.csproj", "{9AADA66A-25FF-423F-A0E5-E5C521C4752F}"
 EndProject
@@ -77,6 +77,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 37", "Övning 37\Övning 37.csproj", "{87479EA6-BCB2-47C6-B4D8-A2D4DEDE59CE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extraövning_Iterationer", "Extraövning_Iterationer\Extraövning_Iterationer.csproj", "{C5F77F0C-C96F-41EE-B249-4BD39852E7B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 38", "Övning 38\Övning 38.csproj", "{BC0C903D-741B-4BD2-B54C-62A134CD8305}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -240,5 +242,9 @@ Global
 		{C5F77F0C-C96F-41EE-B249-4BD39852E7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5F77F0C-C96F-41EE-B249-4BD39852E7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5F77F0C-C96F-41EE-B249-4BD39852E7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0C903D-741B-4BD2-B54C-62A134CD8305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0C903D-741B-4BD2-B54C-62A134CD8305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0C903D-741B-4BD2-B54C-62A134CD8305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0C903D-741B-4BD2-B54C-62A134CD8305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

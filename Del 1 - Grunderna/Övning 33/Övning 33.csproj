@@ -6,6 +6,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Subclasses\Subclasses.csproj" />
+      <ProjectReference Include="..\Superclasses\Superclasses.csproj" />
     </ItemGroup>
 </Project>

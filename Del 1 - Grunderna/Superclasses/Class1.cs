@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Subclasses
+namespace Superclasses
 {
-    public class MainSubclass
+    public class MainSuperclass
     {
         public static T Input<T>(string prompt, Func<string, T> parser)
         {
