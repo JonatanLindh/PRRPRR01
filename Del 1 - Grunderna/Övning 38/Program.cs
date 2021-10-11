@@ -12,23 +12,15 @@ using Superclasses;
 
 namespace Övning_38
 {
-    class Program
+    class Program : MainSuperclass
     {
         static void Main(string[] args)
         {
-            int tal1;
+            double length = Input("Längd: ", double.Parse);
+            double wind = Input("Vindstyrka: ", double.Parse);
 
-            Console.WriteLine("Ange ett tal");
-            tal1 = int.Parse(Console.ReadLine());
-
-            if(tal1 < 10)
-            {
-                Console.WriteLine("Ditt tal är mindre än 10");
-            } 
-            else if(tal1 > 10)
-            {
-                Console.WriteLine("Ditt tal är större än 10");
-            }
+            string result = (length > 7.92 && wind < 2.0) ? "Grattis, nytt rekord!" : "Tyvärr, inget nytt rekord";
+            Console.WriteLine(result);
         }
     }
 }
