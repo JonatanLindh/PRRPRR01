@@ -39,13 +39,12 @@ namespace Superclasses
                 T parsed = baseParser(s);
                 if (onlyAllowed != null && !onlyAllowed.Contains(parsed))
                 {
-                    throw new Exception((errMsg != null) ? errMsg : $"Input måste vara någon av dessa: {onlyAllowed}");
+                    throw new Exception(errMsg ?? $"Input måste vara någon av dessa: [{string.Join(", ", onlyAllowed!)}]");
                 }
                 
                 if (notAllowed != null && notAllowed.Contains(parsed))
                 {
-                    throw new Exception((errMsg != null) ? errMsg : $"Input får inte vara någon av dessa: {onlyAllowed}");
-                    
+                    throw new Exception(errMsg ?? $"Input får inte vara någon av dessa: [{string.Join(", ", onlyAllowed!)}]");
                 }
 
                 return parsed;

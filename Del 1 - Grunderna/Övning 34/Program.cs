@@ -21,7 +21,7 @@ namespace Övning_34
             {
                 < 4 => 0,
                 >= 4 and <= 17 => 16,
-                _ => 25,
+                _ => 25
             };
 
             Console.WriteLine($"\nPris: {price} kr.");
