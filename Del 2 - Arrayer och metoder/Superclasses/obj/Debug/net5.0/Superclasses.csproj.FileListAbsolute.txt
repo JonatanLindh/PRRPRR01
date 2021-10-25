@@ -1,0 +1,24 @@
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\bin\Debug\net5.0\Superclasses.deps.json
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\bin\Debug\net5.0\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\bin\Debug\net5.0\ref\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\bin\Debug\net5.0\Superclasses.pdb
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\obj\Debug\net5.0\Superclasses.csproj.AssemblyReference.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\obj\Debug\net5.0\Superclasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\obj\Debug\net5.0\Superclasses.AssemblyInfoInputs.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\obj\Debug\net5.0\Superclasses.AssemblyInfo.cs
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\obj\Debug\net5.0\Superclasses.csproj.CoreCompileInputs.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\obj\Debug\net5.0\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\obj\Debug\net5.0\ref\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 1 - Grunderna\Superclasses\obj\Debug\net5.0\Superclasses.pdb
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\bin\Debug\net5.0\Superclasses.deps.json
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\bin\Debug\net5.0\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\bin\Debug\net5.0\ref\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\bin\Debug\net5.0\Superclasses.pdb
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.csproj.AssemblyReference.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.AssemblyInfoInputs.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.AssemblyInfo.cs
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.csproj.CoreCompileInputs.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\ref\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.pdb
