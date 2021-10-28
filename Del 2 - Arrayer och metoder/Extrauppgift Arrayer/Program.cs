@@ -8,10 +8,13 @@ namespace Extrauppgift_Arrayer
     {
         static void Main(string[] args)
         {
-            PirateLang();
+            // PirateLangEncrypt();
+            CaesarEncrypt(new [] {1, 2, 3});
+            // CaesarDecrypt();
+            // Console.WriteLine(-1 % 2);
         }
 
-        static void PirateLang()
+        static void PirateLangEncrypt()
         {
             string indata = Input("Skriv något: ", s => s);
             string result = "";
@@ -26,6 +29,46 @@ namespace Extrauppgift_Arrayer
             
             Console.WriteLine($"\n{result}");
         }
-        
+
+        static void CaesarEncrypt(int[] key)
+        {
+            string indata = Input("Skriv något: ", s => s.ToLower());
+            string result = "";
+
+            const int offset = 97;
+            for (int i = 0; i < indata.Length; i++)
+            {
+                result += Char.IsLetter(indata[i])
+                    ? (char) (offset + (((int) indata[i] - offset + key[i % key.Length]) % 26))
+                    : indata[i];
+            }
+            Console.WriteLine($"\n{result}");
+        }
+
+        static void CaesarDecrypt()
+        {
+            string enc = Input("Skriv något krypterat: ", s => s.ToLower());
+            string dec = Input("Skriv samma sak men dekrypterat: ", s =>
+            {
+                if (s.Length != enc.Length)
+                {
+                    throw new Exception("Kryperad och dekrypterad text måste ha lika många tecken.");
+                }
+
+                return s.ToLower();
+            });
+            
+            string result = "";
+            
+            const int offset = 97;
+            for (int i = 0; i < enc.Length; i++)
+            {
+                char e = enc[i];
+                char d = dec[i];
+                
+            }
+            
+            Console.WriteLine($"\n{result}");
+        }
     }
 }
