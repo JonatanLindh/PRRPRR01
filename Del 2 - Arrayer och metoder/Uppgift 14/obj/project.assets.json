@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Extrauppgift Arrayer\\Extrauppgift Arrayer.csproj",
-      "projectName": "Extrauppgift Arrayer",
-      "projectPath": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Extrauppgift Arrayer\\Extrauppgift Arrayer.csproj",
+      "projectUniqueName": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Uppgift 14\\Uppgift 14.csproj",
+      "projectName": "Uppgift 14",
+      "projectPath": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Uppgift 14\\Uppgift 14.csproj",
       "packagesPath": "C:\\Users\\0428lijo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Extrauppgift Arrayer\\obj\\",
+      "outputPath": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Uppgift 14\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\0428lijo\\AppData\\Roaming\\NuGet\\NuGet.Config"
