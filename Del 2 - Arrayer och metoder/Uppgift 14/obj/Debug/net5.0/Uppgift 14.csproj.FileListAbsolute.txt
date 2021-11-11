@@ -17,3 +17,22 @@ C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\ref\Uppgift 14.dll
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.pdb
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.genruntimeconfig.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\Uppgift 14.exe
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\Uppgift 14.deps.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\Uppgift 14.runtimeconfig.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\Uppgift 14.runtimeconfig.dev.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\Uppgift 14.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\ref\Uppgift 14.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\Uppgift 14.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\Superclasses.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\bin\Debug\net5.0\Superclasses.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.csproj.AssemblyReference.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.AssemblyInfoInputs.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.AssemblyInfo.cs
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.csproj.CoreCompileInputs.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.csproj.CopyComplete
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\ref\Uppgift 14.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 14\obj\Debug\net5.0\Uppgift 14.genruntimeconfig.cache

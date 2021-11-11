@@ -22,3 +22,15 @@ C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasse
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.dll
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\ref\Superclasses.dll
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\bin\Debug\net5.0\Superclasses.deps.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\bin\Debug\net5.0\Superclasses.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\bin\Debug\net5.0\ref\Superclasses.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\bin\Debug\net5.0\Superclasses.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.csproj.AssemblyReference.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.AssemblyInfoInputs.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.AssemblyInfo.cs
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.csproj.CoreCompileInputs.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\ref\Superclasses.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Superclasses\obj\Debug\net5.0\Superclasses.pdb

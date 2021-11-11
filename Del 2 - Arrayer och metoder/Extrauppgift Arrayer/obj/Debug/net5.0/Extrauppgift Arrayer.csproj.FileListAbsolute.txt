@@ -16,3 +16,22 @@ C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgif
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\ref\Extrauppgift Arrayer.dll
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.pdb
 C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.genruntimeconfig.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\Extrauppgift Arrayer.exe
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\Extrauppgift Arrayer.deps.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\Extrauppgift Arrayer.runtimeconfig.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\Extrauppgift Arrayer.runtimeconfig.dev.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\Extrauppgift Arrayer.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\ref\Extrauppgift Arrayer.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\Extrauppgift Arrayer.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\Superclasses.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\bin\Debug\net5.0\Superclasses.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.csproj.AssemblyReference.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.AssemblyInfoInputs.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.AssemblyInfo.cs
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.csproj.CoreCompileInputs.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.csproj.CopyComplete
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\ref\Extrauppgift Arrayer.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.genruntimeconfig.cache
