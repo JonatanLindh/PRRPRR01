@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extrauppgift Arrayer", "Ext
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift 14", "Uppgift 14\Uppgift 14.csproj", "{30E20E00-1EC0-4150-B83A-62E1E724344F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift 19", "Uppgift 19\Uppgift 19.csproj", "{E2CDEDF8-3F71-48BE-9757-E0E10892810A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,5 +22,9 @@ Global
 		{30E20E00-1EC0-4150-B83A-62E1E724344F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30E20E00-1EC0-4150-B83A-62E1E724344F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30E20E00-1EC0-4150-B83A-62E1E724344F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2CDEDF8-3F71-48BE-9757-E0E10892810A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2CDEDF8-3F71-48BE-9757-E0E10892810A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2CDEDF8-3F71-48BE-9757-E0E10892810A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2CDEDF8-3F71-48BE-9757-E0E10892810A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

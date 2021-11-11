@@ -1,0 +1,19 @@
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\Uppgift 19.exe
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\Uppgift 19.deps.json
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\Uppgift 19.runtimeconfig.json
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\Uppgift 19.runtimeconfig.dev.json
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\Uppgift 19.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\ref\Uppgift 19.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\Uppgift 19.pdb
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\Superclasses.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\bin\Debug\net5.0\Superclasses.pdb
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.csproj.AssemblyReference.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.AssemblyInfoInputs.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.AssemblyInfo.cs
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.csproj.CoreCompileInputs.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.csproj.CopyComplete
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\ref\Uppgift 19.dll
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.pdb
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 19\obj\Debug\net5.0\Uppgift 19.genruntimeconfig.cache

@@ -12,8 +12,9 @@ namespace Uppgift_14
         {
             string email = Input("Mail: ", s => s);
             Console.WriteLine();
-
+            
             Regex re = new Regex(@"^.+@.+\..+$");
+            // Regexförklaring: https://regex101.com/r/rrZeGw/2
             Console.WriteLine(re.IsMatch(email) ? "Godkänd" : "Ej godkänd");
         }
     }
