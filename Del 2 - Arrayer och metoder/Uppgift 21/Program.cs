@@ -1,10 +1,6 @@
 ﻿#nullable enable
 
 using System;
-using System.Globalization;
-using
-    Superclasses; // https://github.com/JonatanLindh/PRRPRR01/blob/master/Del%202%20-%20Arrayer%20och%20metoder/Superclasses/Class1.cs
-
 
 namespace Uppgift_21
 {
