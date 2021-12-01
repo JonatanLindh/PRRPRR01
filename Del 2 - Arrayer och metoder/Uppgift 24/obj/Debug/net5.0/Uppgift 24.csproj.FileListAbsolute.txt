@@ -1,0 +1,19 @@
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\Uppgift 24.exe
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\Uppgift 24.deps.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\Uppgift 24.runtimeconfig.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\Uppgift 24.runtimeconfig.dev.json
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\Uppgift 24.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\ref\Uppgift 24.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\Uppgift 24.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\Superclasses.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\bin\Debug\net5.0\Superclasses.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.csproj.AssemblyReference.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.AssemblyInfoInputs.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.AssemblyInfo.cs
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.csproj.CoreCompileInputs.cache
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.csproj.CopyComplete
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\ref\Uppgift 24.dll
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.pdb
+D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Uppgift 24\obj\Debug\net5.0\Uppgift 24.genruntimeconfig.cache

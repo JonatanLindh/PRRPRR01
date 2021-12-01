@@ -1,7 +1,5 @@
 ﻿#nullable enable
 using System;
-using Superclasses; // https://github.com/JonatanLindh/PRRPRR01/blob/master/Del%202%20-%20Arrayer%20och%20metoder/Superclasses/Class1.cs
-
 
 namespace Uppgift_24
 {
@@ -9,7 +7,29 @@ namespace Uppgift_24
     {
         static void Main(string[] args)
         {
+            int found = 0;
+            int year = DateTime.Now.Year;
+            int month = DateTime.Now.Month;
             
+            if (DateTime.Now.Day < 13)
+            {
+                month -= 1;
+            }
+            
+            while (found < 5)
+            {
+                while (month > 0)
+                {
+                    if (new DateTime(year, month, 13).DayOfWeek == DayOfWeek.Friday)
+                    {
+                        found++;
+                        Console.WriteLine($"{year}-{month}-13");
+                    }
+                    month--;
+                }
+                month = 12;
+                year -= 1;
+            }
         }
     }
 }

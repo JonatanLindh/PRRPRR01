@@ -8,26 +8,23 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\0428lijo\\.nuget\\packages\\": {}
+    "C:\\Users\\jonat\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Superclasses\\Superclasses.csproj",
+      "projectUniqueName": "D:\\Projects\\cSharpProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Superclasses\\Superclasses.csproj",
       "projectName": "Superclasses",
-      "projectPath": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Superclasses\\Superclasses.csproj",
-      "packagesPath": "C:\\Users\\0428lijo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\0428lijo\\RiderProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Superclasses\\obj\\",
+      "projectPath": "D:\\Projects\\cSharpProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Superclasses\\Superclasses.csproj",
+      "packagesPath": "C:\\Users\\jonat\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\cSharpProjects\\PRRPRR01\\Del 2 - Arrayer och metoder\\Superclasses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\0428lijo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jonat\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
-      "sources": {
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
@@ -58,7 +55,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
