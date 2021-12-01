@@ -17,7 +17,7 @@ namespace Extrauppgift_Math
         static void Main(string[] args)
         {
             int gregorianYear = -5510;  
-            int byzantineYear = 0; // 7530
+            int byzantineYear = 0;
             
             while (gregorianYear < DateTime.Now.Year)
             {
