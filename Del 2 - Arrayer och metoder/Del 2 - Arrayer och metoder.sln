@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift 21", "Uppgift 21\Up
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uppgift 24", "Uppgift 24\Uppgift 24.csproj", "{24FFE80D-4690-400B-A999-296377670E1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extrauppgift Math", "Extrauppgift Math\Extrauppgift Math.csproj", "{45A387C0-89B9-4898-92E0-872FD93E409B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,5 +40,9 @@ Global
 		{24FFE80D-4690-400B-A999-296377670E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24FFE80D-4690-400B-A999-296377670E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24FFE80D-4690-400B-A999-296377670E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A387C0-89B9-4898-92E0-872FD93E409B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A387C0-89B9-4898-92E0-872FD93E409B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A387C0-89B9-4898-92E0-872FD93E409B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A387C0-89B9-4898-92E0-872FD93E409B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
