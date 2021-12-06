@@ -23,7 +23,7 @@ namespace Extrauppgift_Math
             {
                 bool BC = gregorianYear <= 0;
                 
-                if (gregorianYear % 4 == 0 && (gregorianYear % 100 != 0 || gregorianYear % 400 == 0)) // Se kommentar övan
+                if (gregorianYear % 4 == 0 && (gregorianYear % 100 != 0 || gregorianYear % 400 == 0)) // Se kommentar ovan
                 {
                     Console.WriteLine($"Gregoriansk: {(!BC ? gregorianYear : gregorianYear - 1)}");
                     Console.WriteLine($"Bysantinsk: {(!BC ? byzantineYear -1: byzantineYear - 2)}\n");
