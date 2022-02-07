@@ -17,8 +17,7 @@ namespace array
                 {
                     1 => "Jättedåligt",
                     2 => "Ganska dåligt",
-                    3 => "OK",
-                    4 => "OK",
+                    3 or 4 => "OK",
                     5 => "Ganska bra",
                     6 => "Jättebra",
                     _ => "Fel"
