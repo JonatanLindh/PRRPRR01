@@ -9,6 +9,7 @@ namespace array
             int throws = 100;
             int[] dice = new int[throws];
             Random rnd = new Random();
+
             for (int i = 0; i < throws; i++)
             {
                 dice[i] = rnd.Next(1, 7);
