@@ -35,3 +35,4 @@ D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arr
 D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\ref\Extrauppgift Arrayer.dll
 D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.pdb
 D:\Projects\cSharpProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.genruntimeconfig.cache
+C:\Users\0428lijo\RiderProjects\PRRPRR01\Del 2 - Arrayer och metoder\Extrauppgift Arrayer\obj\Debug\net5.0\Extrauppgift Arrayer.csproj.CopyComplete

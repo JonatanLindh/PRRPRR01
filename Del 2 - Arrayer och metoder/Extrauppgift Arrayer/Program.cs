@@ -11,8 +11,8 @@ namespace Extrauppgift_Arrayer
         {
             // PirateLangEncrypt();
             // CaesarEncrypt(new [] {1, 2, 3});
-            // CaesarDecrypt();
-            PirateLangDecrypt();
+            CaesarDecrypt();
+            // PirateLangDecrypt();
         }
 
         static void PirateLangEncrypt()
@@ -46,7 +46,7 @@ namespace Extrauppgift_Arrayer
                     continue;
                 }
 
-                result += (char) (unicodeOffset + (l - unicodeOffset + key[keyPos % key.Length]) % nLetters);
+                result += (char)(unicodeOffset + (l - unicodeOffset + key[keyPos % key.Length]) % nLetters);
                 keyPos++;
             }
 
@@ -83,7 +83,7 @@ namespace Extrauppgift_Arrayer
                 List<int> looping = Enumerable
                     .Repeat(
                         key.GetRange(0, i),
-                        (int) Math.Ceiling(key.Count / (double) i) + 1
+                        (int)Math.Ceiling(key.Count / (double)i) + 1
                     )
                     .SelectMany(a => a)
                     .ToList();
@@ -116,7 +116,7 @@ namespace Extrauppgift_Arrayer
             Console.WriteLine($"\n{dec}");
         }
     }
-    
+
     public class MainSuperclass
     {
         public static T Input<T>(string prompt, Func<string, T> parser)
