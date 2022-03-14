@@ -18,8 +18,8 @@ namespace binary_search
                 totBinSteps += results.Item2;
             }
 
-            Console.WriteLine($"Average Sequential steps: {totSeqSteps / 1000.0}");
-            Console.WriteLine($"Average Binary steps: {totBinSteps / 1000.0}");
+            Console.WriteLine($"Antal steg sekventiell sökning, medel: {totSeqSteps / 1000.0}");
+            Console.WriteLine($"Antal steg binär sökning, medel: {totBinSteps / 1000.0}");
         }
         static (int, int) PerformSearches(bool log = false)
         {
