@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "insertion_sort", "insertion
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binary_search", "binary_search\binary_search.csproj", "{9D292EB6-E133-46D2-9C7F-D4A9DE5B587F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uppg_12", "uppg_12\uppg_12.csproj", "{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,5 +27,9 @@ Global
 		{9D292EB6-E133-46D2-9C7F-D4A9DE5B587F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D292EB6-E133-46D2-9C7F-D4A9DE5B587F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D292EB6-E133-46D2-9C7F-D4A9DE5B587F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
