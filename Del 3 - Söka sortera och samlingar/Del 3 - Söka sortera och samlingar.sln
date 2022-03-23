@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "binary_search", "binary_sea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uppg_12", "uppg_12\uppg_12.csproj", "{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uppg_14", "uppg_14\uppg_14.csproj", "{B66523B7-FD39-4217-9317-47992D4FBA4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,5 +33,9 @@ Global
 		{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F30B941C-531E-4C35-BEAE-0F3F7933DE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B66523B7-FD39-4217-9317-47992D4FBA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B66523B7-FD39-4217-9317-47992D4FBA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B66523B7-FD39-4217-9317-47992D4FBA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B66523B7-FD39-4217-9317-47992D4FBA4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
