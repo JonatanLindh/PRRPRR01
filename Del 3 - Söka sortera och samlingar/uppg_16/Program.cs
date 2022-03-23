@@ -19,12 +19,10 @@ namespace uppg_16
 
                 if (option == 0)
                 {
-                    //Anropa metod som skriver ut listan
                     AddItem(queue);
                 }
                 else if (option == 1)
                 {
-                    //Anropa en metod som lägger till i lista
                     Console.WriteLine("\n\"" + queue.Dequeue() + "\" removed from queue");
                     Console.WriteLine("\nPress any key to continue...");
                     Console.ReadLine();
