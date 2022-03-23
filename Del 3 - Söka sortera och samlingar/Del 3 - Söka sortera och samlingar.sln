@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uppg_12", "uppg_12\uppg_12.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uppg_14", "uppg_14\uppg_14.csproj", "{B66523B7-FD39-4217-9317-47992D4FBA4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "uppg_16", "uppg_16\uppg_16.csproj", "{5BCD3D49-A4CD-4AAA-AE6D-8557019FB161}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,5 +39,9 @@ Global
 		{B66523B7-FD39-4217-9317-47992D4FBA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B66523B7-FD39-4217-9317-47992D4FBA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B66523B7-FD39-4217-9317-47992D4FBA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BCD3D49-A4CD-4AAA-AE6D-8557019FB161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCD3D49-A4CD-4AAA-AE6D-8557019FB161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCD3D49-A4CD-4AAA-AE6D-8557019FB161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCD3D49-A4CD-4AAA-AE6D-8557019FB161}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
