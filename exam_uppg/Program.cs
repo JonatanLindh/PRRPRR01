@@ -3,44 +3,43 @@ using System.Collections.Generic;
 
 namespace exam_uppg
 {
-    class Program : Game
+    class Program
     {
 
-        static Random rnd = new Random();
         static void Main(string[] args)
         {
             Console.WriteLine("\n\nVälkommen till Rickards källare där du kan spela bort äganderätten till din förstfödde!");
             Console.Write($"Hur många lottorader vill du spela? Varje rad kostar {Lotto.PRICE} kr: ");
-            int numberOfLottoRows = int.Parse(Console.ReadLine());
-            int totalPrice = numberOfLottoRows * Lotto.PRICE;
+            int lRows = int.Parse(Console.ReadLine());
 
             Console.Write("Vill du även spala på Lotto 2? (j/n): ");
-            bool playLotto2 = Console.ReadLine().ToLower() == "j";
-            totalPrice *= playLotto2 ? 2 : 1;
+            bool playL2 = Console.ReadLine().ToLower() == "j";
 
             Console.Write($"Vill du spela Joker? En Jokerrad kostar {Joker.PRICE} kr. (j/n): ");
-            bool playJoker = Console.ReadLine().ToLower() == "j";
-            totalPrice += playJoker ? Joker.PRICE : 0;
+            bool playJ = Console.ReadLine().ToLower() == "j";
+
+            int totalPrice = lRows * Lotto.PRICE * (playL2 ? 2 : 1) + (playJ ? Joker.PRICE : 0);
 
             Console.WriteLine($"\nTotal kostnad: {totalPrice} kr");
 
             // Play Lotto 1 if user bought at least 1 row
-            if (numberOfLottoRows > 0)
+            if (lRows > 0)
             {
-                Lotto lotto = new Lotto(numberOfLottoRows);
+                Lotto lotto = new Lotto(lRows);
                 lotto.Play(1);
 
                 // Play Lotto 2 if user wants
-                if (playLotto2) lotto.Play(2);
+                if (playL2) lotto.Play(2);
             }
 
             // Play Joker if user wants
-            if (playJoker) Joker.Play();
+            if (playJ) Joker.Play();
         }
     }
 
     class Game
     {
+        public static Random rnd = new Random();
         public static void PrintGreen(int number)
         {
             Console.BackgroundColor = ConsoleColor.Green;
@@ -68,8 +67,6 @@ namespace exam_uppg
     class Lotto : Game
     {
         public const int PRICE = 3;
-        private static Random rnd = new Random();
-
         private List<List<int>> rows = new List<List<int>>();
 
         public Lotto(int nrRows)
@@ -152,18 +149,15 @@ namespace exam_uppg
             }
             Console.WriteLine("\n\n");
 
-            (int normal, int extra) = (0, 0);
-
-            for (int i = 0; i < this.rows.Count; i++)
+            for (int i = 0, ordinary = 0, extra = 0; i < this.rows.Count; i++, (ordinary, extra) = (0, 0))
             {
-                (normal, extra) = (0, 0);
                 Console.WriteLine($"Din lottorad nr {i + 1}");
                 for (int j = 0; j < 7; j++)
                 {
                     if (lottoNumbers.Contains(rows[i][j]))
                     {
                         PrintGreen(rows[i][j]);
-                        normal++;
+                        ordinary++;
                     }
                     else if (extraNumbers.Contains(rows[i][j]))
                     {
@@ -176,7 +170,7 @@ namespace exam_uppg
                     }
                     Console.Write("\t");
                 }
-                Console.WriteLine($"\tOrdinarie rätt: {normal}\tExtra rätt: {extra}\n");
+                Console.WriteLine($"\tOrdinarie rätt: {ordinary}\tExtra rätt: {extra}\n");
             }
             PrintDivider();
         }
@@ -185,7 +179,6 @@ namespace exam_uppg
     class Joker : Game
     {
         public const int PRICE = 10;
-        static Random rnd = new Random();
 
         public static void Play()
         {
