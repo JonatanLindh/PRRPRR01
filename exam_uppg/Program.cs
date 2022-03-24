@@ -13,7 +13,7 @@ namespace exam_uppg
             Console.Write($"Hur många lottorader vill du spela? Varje rad kostar {Lotto.PRICE} kr: ");
             int lRows = int.Parse(Console.ReadLine());
 
-            Console.Write("Vill du även spala på Lotto 2? (j/n): ");
+            Console.Write("Vill du även spela på Lotto 2? (j/n): ");
             bool playL2 = Console.ReadLine().ToLower() == "j";
 
             Console.Write($"Vill du spela Joker? En Jokerrad kostar {Joker.PRICE} kr. (j/n): ");
