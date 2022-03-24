@@ -8,7 +8,8 @@ namespace exam_uppg
 
         static void Main(string[] args)
         {
-            Console.WriteLine("\n\nVälkommen till Rickards källare där du kan spela bort äganderätten till din förstfödde!");
+            Game.PrintDivider();
+            Console.WriteLine("Välkommen till Rickards källare! Här kan du kan spela bort äganderätten till din förstfödde!");
             Console.Write($"Hur många lottorader vill du spela? Varje rad kostar {Lotto.PRICE} kr: ");
             int lRows = int.Parse(Console.ReadLine());
 
@@ -21,6 +22,7 @@ namespace exam_uppg
             int totalPrice = lRows * Lotto.PRICE * (playL2 ? 2 : 1) + (playJ ? Joker.PRICE : 0);
 
             Console.WriteLine($"\nTotal kostnad: {totalPrice} kr");
+            Game.PrintDivider();
 
             // Play Lotto 1 if user bought at least 1 row
             if (lRows > 0)
@@ -60,7 +62,7 @@ namespace exam_uppg
 
         public static void PrintDivider()
         {
-            Console.WriteLine("\n-----------------------------------------------------");
+            Console.WriteLine($"\n{new string('_', 110)}\n");
         }
     }
 
@@ -135,7 +137,7 @@ namespace exam_uppg
 
         void PrintLotto(int gameNr, List<int> lottoNumbers, List<int> extraNumbers)
         {
-            Console.WriteLine($"\n\nRätt Lottorad dragning {gameNr}\t\t\t\t\tTilläggsnummer");
+            Console.WriteLine($"Rätt Lottorad dragning {gameNr}\t\t\t\t\tTilläggsnummer");
             for (int i = 0; i < lottoNumbers.Count; i++)
             {
                 PrintGreen(lottoNumbers[i]);
@@ -147,11 +149,11 @@ namespace exam_uppg
                 PrintYellow(extraNumbers[i]);
                 Console.Write("\t");
             }
-            Console.WriteLine("\n\n");
+            Console.WriteLine("\n");
 
             for (int i = 0, ordinary = 0, extra = 0; i < this.rows.Count; i++, (ordinary, extra) = (0, 0))
             {
-                Console.WriteLine($"Din lottorad nr {i + 1}");
+                Console.WriteLine($"\nDin lottorad nr {i + 1}");
                 for (int j = 0; j < 7; j++)
                 {
                     if (lottoNumbers.Contains(rows[i][j]))
@@ -170,7 +172,7 @@ namespace exam_uppg
                     }
                     Console.Write("\t");
                 }
-                Console.WriteLine($"\tOrdinarie rätt: {ordinary}\tExtra rätt: {extra}\n");
+                Console.WriteLine($"\tOrdinarie rätt: {ordinary}\tExtra rätt: {extra}");
             }
             PrintDivider();
         }
@@ -193,7 +195,7 @@ namespace exam_uppg
             int scoreLeft = CalcScoreLeft(correctRow, playerRow);
             int scoreRight = CalcScoreRight(correctRow, playerRow);
 
-            Console.WriteLine("\n\nRätt Jokerrad");
+            Console.WriteLine("Rätt Jokerrad");
             for (int i = 0; i < correctRow.Length; i++)
             {
                 PrintGreen(correctRow[i]);
@@ -213,6 +215,7 @@ namespace exam_uppg
                 Console.Write("\t");
             }
             Console.WriteLine($"\t Rätt från vänster: {scoreLeft}\t Rätt från höger: {scoreRight}");
+            PrintDivider();
         }
 
         static int CalcScoreLeft(int[] correctRow, int[] playerRow)
