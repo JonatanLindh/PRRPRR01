@@ -11,14 +11,15 @@ namespace exam_uppg
             Game.PrintDivider();
             Console.WriteLine("Välkommen till Rickards källare! Här kan du kan spela bort äganderätten till din förstfödde!");
             Console.Write($"Hur många lottorader vill du spela? Varje rad kostar {Lotto.PRICE} kr: ");
-            int lRows = int.Parse(Console.ReadLine());
+            int lRows = int.Parse(Console.ReadLine()); // Number of lotto rows to play
 
             Console.Write("Vill du även spela på Lotto 2? (j/n): ");
-            bool playL2 = Console.ReadLine().ToLower() == "j";
+            bool playL2 = Console.ReadLine().ToLower() == "j"; // true if user wants to play Lotto 2
 
             Console.Write($"Vill du spela Joker? En Jokerrad kostar {Joker.PRICE} kr. (j/n): ");
-            bool playJ = Console.ReadLine().ToLower() == "j";
+            bool playJ = Console.ReadLine().ToLower() == "j"; // true if user wants to play Joker
 
+            // Num rows * price * (2 if Lotto 2, else 1) + (Joker price if Joker)
             int totalPrice = lRows * Lotto.PRICE * (playL2 ? 2 : 1) + (playJ ? Joker.PRICE : 0);
 
             Console.WriteLine($"\nTotal kostnad: {totalPrice} kr");
@@ -42,6 +43,8 @@ namespace exam_uppg
     class Game
     {
         public static Random rnd = new Random();
+
+        // Prints an integer with green background
         public static void PrintGreen(int number)
         {
             Console.BackgroundColor = ConsoleColor.Green;
@@ -51,6 +54,7 @@ namespace exam_uppg
             Console.ForegroundColor = ConsoleColor.White;
         }
 
+        // Prints an integer with yellow background
         public static void PrintYellow(int number)
         {
             Console.BackgroundColor = ConsoleColor.Yellow;
@@ -66,11 +70,13 @@ namespace exam_uppg
         }
     }
 
+    // Class for the lotto game and its methods
     class Lotto : Game
     {
         public const int PRICE = 3;
         private List<List<int>> rows = new List<List<int>>();
 
+        // initializes the lotto object with the user's rows, will also be the same for lotto 2
         public Lotto(int nrRows)
         {
             List<int> temp = new List<int>();
@@ -92,6 +98,7 @@ namespace exam_uppg
             }
         }
 
+        // Plays a game of lotto with the previously created rows
         public void Play(int gameNr)
         {
 
@@ -99,6 +106,7 @@ namespace exam_uppg
             List<int> extraNumbers = new List<int>();
             List<int> temp = new List<int>();
 
+            // Generates 11 unique random numbers between 1 and 35 (inlusive)
             for (int i = 0; i < 11; i++)
             {
                 int number = rnd.Next(1, 36);
@@ -109,15 +117,18 @@ namespace exam_uppg
                 temp.Add(number);
             }
 
+            // Splits the random numbers into ordinary numbers and extra numbers
             lottoNumbers = temp.GetRange(0, 7);
             extraNumbers = temp.GetRange(7, 4);
 
+            // Sorts both sets of numbers
             BubbleSort(lottoNumbers);
             BubbleSort(extraNumbers);
 
             this.PrintLotto(gameNr, lottoNumbers, extraNumbers);
         }
 
+        // https://en.wikipedia.org/wiki/Bubble_sort
         static void BubbleSort(List<int> list)
         {
             int temp = 0;
@@ -137,6 +148,7 @@ namespace exam_uppg
 
         void PrintLotto(int gameNr, List<int> lottoNumbers, List<int> extraNumbers)
         {
+            // Prints the correct row, ordinary with green background, extra with yellow background
             Console.WriteLine($"Rätt Lottorad dragning {gameNr}\t\t\t\t\tTilläggsnummer");
             for (int i = 0; i < lottoNumbers.Count; i++)
             {
@@ -151,39 +163,49 @@ namespace exam_uppg
             }
             Console.WriteLine("\n");
 
+            // Loops through the rows and checks against the generated numbers
+            // Loop has 3 local variables: i, ordinary and extra; each set to 0 at the start of the loop
+            // Each loop increments i and sets ordinary and extra to 0
             for (int i = 0, ordinary = 0, extra = 0; i < this.rows.Count; i++, (ordinary, extra) = (0, 0))
             {
                 Console.WriteLine($"\nDin lottorad nr {i + 1}");
                 for (int j = 0; j < 7; j++)
                 {
+                    // If the number is in the ordinary numbers, set green background
                     if (lottoNumbers.Contains(rows[i][j]))
                     {
                         PrintGreen(rows[i][j]);
                         ordinary++;
                     }
+                    // If the number is in the extra numbers, set yellow background
                     else if (extraNumbers.Contains(rows[i][j]))
                     {
                         PrintYellow(rows[i][j]);
                         extra++;
                     }
+                    // If the number is not in the ordinary or extra numbers, print the number with no special background
                     else
                     {
                         Console.Write($" {rows[i][j]} ");
                     }
                     Console.Write("\t");
                 }
+
                 Console.WriteLine($"\tOrdinarie rätt: {ordinary}\tExtra rätt: {extra}");
             }
             PrintDivider();
         }
     }
 
+    // Class for the joker game and its methods
     class Joker : Game
     {
         public const int PRICE = 10;
 
         public static void Play()
         {
+            // Genarate 2 rows of 7 random numbers between 1 and 9 (inclusive)
+            // One row is the correct row, the other is the user's row
             int[] correctRow = new int[7];
             int[] playerRow = new int[7];
             for (int i = 0; i < correctRow.Length; i++)
@@ -192,15 +214,19 @@ namespace exam_uppg
                 playerRow[i] = rnd.Next(1, 10);
             }
 
+            // Calcutate the scores from both sides
             int scoreLeft = CalcScoreLeft(correctRow, playerRow);
             int scoreRight = CalcScoreRight(correctRow, playerRow);
 
+            // Prints the correct row with numbers having a green background
             Console.WriteLine("Rätt Jokerrad");
             for (int i = 0; i < correctRow.Length; i++)
             {
                 PrintGreen(correctRow[i]);
                 Console.Write("\t");
             }
+
+            // Prints the user's row with correct numbers having a yellow background
             Console.WriteLine("\n\nDin Jokerrad");
             for (int i = 0; i < correctRow.Length; i++)
             {
@@ -218,6 +244,7 @@ namespace exam_uppg
             PrintDivider();
         }
 
+        // Check number of correct numbers from the left side
         static int CalcScoreLeft(int[] correctRow, int[] playerRow)
         {
             int score = 0;
@@ -225,6 +252,7 @@ namespace exam_uppg
             return score;
         }
 
+        // Check number of correct numbers from the right side
         static int CalcScoreRight(int[] correctRow, int[] playerRow)
         {
             int score = 0;
