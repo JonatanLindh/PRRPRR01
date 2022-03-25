@@ -44,20 +44,10 @@ namespace exam_uppg
     {
         public static Random rnd = new Random();
 
-        // Prints an integer with green background
-        public static void PrintGreen(int number)
+        // Prints an integer with colored background
+        public static void PrintColor(ConsoleColor color, int number)
         {
-            Console.BackgroundColor = ConsoleColor.Green;
-            Console.ForegroundColor = ConsoleColor.Black;
-            Console.Write($" {number} ");
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.White;
-        }
-
-        // Prints an integer with yellow background
-        public static void PrintYellow(int number)
-        {
-            Console.BackgroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = color;
             Console.ForegroundColor = ConsoleColor.Black;
             Console.Write($" {number} ");
             Console.BackgroundColor = ConsoleColor.Black;
@@ -86,16 +76,7 @@ namespace exam_uppg
             // Generates nrRows rows in a list
             for (int i = 0; i < nrRows; i++)
             {
-                temp.Clear(); // Clears the temp list
-                for (int j = 0; j < 7; j++)
-                {
-                    int number = rnd.Next(1, 36); // Generates a random number between 1 and 35 (inclusive)
-                    while (temp.Contains(number)) // Generates a new one if the number is already in the list
-                    {
-                        number = rnd.Next(1, 36);
-                    }
-                    temp.Add(number); // Adds number to the list
-                }
+                temp = GenUniqueRandomNumbers(7); // Generates 7 unique random numbers between 1 and 35 (inlusive)
                 BubbleSort(temp); // Sorts the list
                 rows.Add(temp.GetRange(0, 7)); // Adds the sorted temp list to the rows list
             }
@@ -107,18 +88,9 @@ namespace exam_uppg
 
             List<int> lottoNumbers = new List<int>();
             List<int> extraNumbers = new List<int>();
-            List<int> temp = new List<int>();
 
             // Generates 11 unique random numbers between 1 and 35 (inlusive)
-            for (int i = 0; i < 11; i++)
-            {
-                int number = rnd.Next(1, 36);
-                while (temp.Contains(number))
-                {
-                    number = rnd.Next(1, 36);
-                }
-                temp.Add(number);
-            }
+            List<int> temp = GenUniqueRandomNumbers(11);
 
             // Splits the random numbers into ordinary numbers and extra numbers
             lottoNumbers = temp.GetRange(0, 7); // Seven first numbers
@@ -149,19 +121,45 @@ namespace exam_uppg
             }
         }
 
+        // Generates n unique random numbers between 1 and 35 (inlusive)
+        List<int> GenUniqueRandomNumbers(int n)
+        {
+            List<int> temp = new List<int>();
+            for (int i = 0; i < n; i++)
+            {
+                int number = rnd.Next(1, 36); // Generates a random number between 1 and 35 (inclusive)
+                while (ListContains(temp, number)) // Generates a new one if the number is already in the list
+                {
+                    number = rnd.Next(1, 36);
+                }
+                temp.Add(number); // Adds number to the list
+            }
+            return temp;
+        }
+
+        // Checks if a list contains an element
+        static bool ListContains<T>(List<T> list, T el)
+        {
+            foreach (T i in list)
+            {
+                if (i.Equals(el)) return true;
+            }
+            return false;
+        }
+
         void PrintLotto(int gameNr, List<int> lottoNumbers, List<int> extraNumbers)
         {
             // Prints the correct row, ordinary with green background, extra with yellow background
             Console.WriteLine($"Rätt Lottorad dragning {gameNr}\t\t\t\t\tTilläggsnummer");
             for (int i = 0; i < lottoNumbers.Count; i++)
             {
-                PrintGreen(lottoNumbers[i]);
+                PrintColor(ConsoleColor.Green, lottoNumbers[i]);
                 Console.Write("\t");
             }
             Console.Write("\t");
             for (int i = 0; i < extraNumbers.Count; i++)
             {
-                PrintYellow(extraNumbers[i]);
+                PrintColor(ConsoleColor.Yellow, extraNumbers[i]);
                 Console.Write("\t");
             }
             Console.WriteLine("\n");
@@ -175,15 +173,15 @@ namespace exam_uppg
                 for (int j = 0; j < 7; j++)
                 {
                     // If the number is in the ordinary numbers, set green background
-                    if (lottoNumbers.Contains(rows[i][j]))
+                    if (ListContains(lottoNumbers, rows[i][j]))
                     {
-                        PrintGreen(rows[i][j]);
+                        PrintColor(ConsoleColor.Green, rows[i][j]);
                         ordinary++;
                     }
                     // If the number is in the extra numbers, set yellow background
-                    else if (extraNumbers.Contains(rows[i][j]))
+                    else if (ListContains(extraNumbers, rows[i][j]))
                     {
-                        PrintYellow(rows[i][j]);
+                        PrintColor(ConsoleColor.Yellow, rows[i][j]);
                         extra++;
                     }
                     // If the number is not in the ordinary or extra numbers, print the number with no special background
@@ -225,7 +223,7 @@ namespace exam_uppg
             Console.WriteLine("Rätt Jokerrad");
             for (int i = 0; i < correctRow.Length; i++)
             {
-                PrintGreen(correctRow[i]);
+                PrintColor(ConsoleColor.Green, correctRow[i]);
                 Console.Write("\t");
             }
 
@@ -235,7 +233,7 @@ namespace exam_uppg
             {
                 if (correctRow[i] == playerRow[i])
                 {
-                    PrintYellow(playerRow[i]);
+                    PrintColor(ConsoleColor.Yellow, playerRow[i]);
                 }
                 else
                 {
