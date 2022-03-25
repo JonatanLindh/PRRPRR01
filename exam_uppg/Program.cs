@@ -74,6 +74,8 @@ namespace exam_uppg
     class Lotto : Game
     {
         public const int PRICE = 3;
+
+        // List of lists with the users rows
         private List<List<int>> rows = new List<List<int>>();
 
         // initializes the lotto object with the user's rows, will also be the same for lotto 2
@@ -81,20 +83,21 @@ namespace exam_uppg
         {
             List<int> temp = new List<int>();
 
+            // Generates nrRows rows in a list
             for (int i = 0; i < nrRows; i++)
             {
-                temp.Clear();
+                temp.Clear(); // Clears the temp list
                 for (int j = 0; j < 7; j++)
                 {
-                    int number = rnd.Next(1, 36);
-                    while (temp.Contains(number))
+                    int number = rnd.Next(1, 36); // Generates a random number between 1 and 35 (inclusive)
+                    while (temp.Contains(number)) // Generates a new one if the number is already in the list
                     {
                         number = rnd.Next(1, 36);
                     }
-                    temp.Add(number);
+                    temp.Add(number); // Adds number to the list
                 }
-                BubbleSort(temp);
-                rows.Add(temp.GetRange(0, 7));
+                BubbleSort(temp); // Sorts the list
+                rows.Add(temp.GetRange(0, 7)); // Adds the sorted temp list to the rows list
             }
         }
 
@@ -118,8 +121,8 @@ namespace exam_uppg
             }
 
             // Splits the random numbers into ordinary numbers and extra numbers
-            lottoNumbers = temp.GetRange(0, 7);
-            extraNumbers = temp.GetRange(7, 4);
+            lottoNumbers = temp.GetRange(0, 7); // Seven first numbers
+            extraNumbers = temp.GetRange(7, 4); // Four last numbers
 
             // Sorts both sets of numbers
             BubbleSort(lottoNumbers);
