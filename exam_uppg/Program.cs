@@ -231,7 +231,11 @@ namespace exam_uppg
             Console.WriteLine("\n\nDin Jokerrad");
             for (int i = 0; i < correctRow.Length; i++)
             {
-                if (correctRow[i] == playerRow[i])
+                if ((scoreLeft > i) || (scoreRight >= (correctRow.Length-i)))
+                {
+                    PrintColor(ConsoleColor.Green, playerRow[i]);
+                }
+                else if (correctRow[i] == playerRow[i])
                 {
                     PrintColor(ConsoleColor.Yellow, playerRow[i]);
                 }
